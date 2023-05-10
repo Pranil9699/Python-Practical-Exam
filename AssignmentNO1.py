@@ -38,3 +38,26 @@ for num in range(2, n+1):
 print("Prime numbers till", n, "are:")
 for prime in prime_numbers:
     print(prime)
+
+    
+    # Write a program that accept two integer values and if both are equal then prints “SAME 
+# identity” otherwise prints, “DIFFERENT identity" . Look Accoring this program i write code you just check it correct or not and tell me ok ,
+a=int(input("Enter First Num:"))
+b=int(input("Enter Second Num:"))
+
+if a is b:
+  print("Same Identity")
+else:
+  print("DIFFERENT identity")
+
+
+# Write a program to display following pattern.
+# 1 2 3 4
+# 1 2 3
+# 1 2
+# 1
+# look this ques and for my side 
+for i in range(4, 0, -1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
