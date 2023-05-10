@@ -61,3 +61,17 @@ for i in range(4, 0, -1):
     for j in range(1, i+1):
         print(j, end=" ")
     print()
+    
+    
+    
+#Reverse The Given Number:
+
+num = int(input("Enter the Number : "))
+newnum = 0
+
+while num > 0:
+  lastdight = num % 10
+  newnum = (newnum * 10) + lastdight
+  num //= 10
+
+print(newnum)
