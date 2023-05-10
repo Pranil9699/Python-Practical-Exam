@@ -75,3 +75,24 @@ while num > 0:
   num //= 10
 
 print(newnum)
+
+
+
+
+# 1) Write a Sequential search function which searches an item in a sorted list. The function
+# should return the index of element to be searchedin the list.
+List = [2, 4, 6, 8, 0]
+print(List)
+List = sorted(List)
+
+
+def searchIndex(List, item):
+  for i in range(len(List)):
+    if List[i] == item:
+      return i
+  return -1
+
+
+Index = searchIndex(List, 8)
+print(List)
+print(Index)
