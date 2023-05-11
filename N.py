@@ -10,14 +10,28 @@ print("Minimum element in the tuple:", min(tuple_of_numbers))
 
 print("Sum of elements in the tuple:", sum(tuple_of_numbers))
 
-        Enter the number of elements in the tuple: 5
+        n = int(input("Enter a positive integer: "))
 
-Enter the elements of the tuple separated by spaces: 1 2 3 4 5
+if n <= 1:
 
-Tuple of numbers: (1, 2, 3, 4, 5)
+    print("No prime numbers in this range")
 
-Maximum element in the tuple: 5
+else:
 
-Minimum element in the tuple: 1
+    print("Prime numbers between 1 and", n, "are:")
 
-Sum of elements in the tuple: 15
+    for i in range(2, n+1):
+
+        is_prime = True
+
+        for j in range(2, int(i**0.5)+1):
+
+            if i % j == 0:
+
+                is_prime = False
+
+                break
+
+        if is_prime:
+
+            print(i, end=" ")
